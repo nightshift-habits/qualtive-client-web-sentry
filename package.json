@@ -1,0 +1,42 @@
+{
+  "name": "qualtive-web-sentry",
+  "version": "1.0.0-beta.1",
+  "description": "Sentry additions for the Qualtive client library for web.",
+  "author": "Qualtive",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "jest",
+    "build": "rm -rf dist && tsc",
+    "package": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightshift-habits/qualtive-client-web-sentry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nightshift-habits/qualtive-client-web-sentry/issues"
+  },
+  "homepage": "https://github.com/nightshift-habits/qualtive-client-web-sentry#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.10.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@sentry/core": "^8.42.0",
+    "@types/jest": "^29.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "globals": "^15.13.0",
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.4.3",
+    "prettier": "^3.0.2",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.1.6"
+  }
+}
